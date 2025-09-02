@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OnScrum | Transformando sua experiência digital</title>
+    <style>
+        /* Reset básico de estilo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #05bfdb;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header .logo {
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        /* Seção de introdução */
+        .intro {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #e0f0ff;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .intro h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #004b8d;
+            font-weight: 700;
+        }
+
+        .intro p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .btn-primary {
+            background-color: #005fb2;
+            color: white;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #004a8d;
+        }
+
+        /* Serviços */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background-color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .service {
+            width: 30%;
+            text-align: center;
+            background-color: #f0f8ff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service h3 {
+            margin-bottom: 15px;
+            color: #004b8d;
+            font-weight: 600;
+            font-size: 1.6em;
+        }
+
+        .service p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* Formulário */
+        .contact-form {
+            background-color: #004b8d;
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        .form-input {
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            font-size: 1.1em;
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-input:focus {
+            border: 2px solid #005fb2;
+            box-shadow: 0 0 10px rgba(0, 95, 178, 0.4);
+        }
+
+        .form-button {
+            background-color: #00aaff;
+            color: white;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-button:hover {
+            background-color: #007bb5;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #05bfdb;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 1em;
+            position: relative;
+        }
+
+        footer .logo {
+            max-width: 140px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animação */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="32.png" alt="Logo OnScrum" class="logo">
+        <h1></h1>
+        <p>Transformando a experiência digital da sua empresa</p>
+    </header>
+
+    <!-- Seção de Introdução -->
+    <section class="intro">
+        <h2>Bem-vindo à OnScrum!</h2>
+        <p>Ajudamos empresas a otimizar suas soluções digitais com inovação, eficiência e qualidade. Faça parte da transformação digital conosco!</p>
+        <a href="#contact" class="btn-primary">Entre em Contato</a>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section class="services">
+        <div class="service">
+            <h3>Desenvolvimento Web</h3>
+            <p>Criação de sites e aplicações web personalizadas, com foco em usabilidade e design responsivo.</p>
+        </div>
+        <div class="service">
+            <h3>Consultoria Digital</h3>
+            <p>Aconselhamento estratégico para otimizar processos, melhorar a experiência do usuário e aumentar a performance digital.</p>
+        </div>
+        <div class="service">
+            <h3>Design de UI/UX</h3>
+            <p>Desenvolvimento de interfaces intuitivas e agradáveis, focadas no melhor desempenho e experiência do usuário.</p>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact-form">
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" class="form-input" placeholder="Seu nome" required><br>
+            <input type="email" class="form-input" placeholder="Seu email" required><br>
+            <textarea class="form-input" rows="4" placeholder="Sua mensagem" required></textarea><br>
+            <button type="submit" class="form-button">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <img src="32.png" alt="Logo OnScrum" class="logo">
+        <p>&copy; 2025 OnScrum. Todos os direitos reservados. | <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </footer>
+
+</body>
+</html>
